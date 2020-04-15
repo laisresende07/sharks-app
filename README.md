@@ -311,10 +311,10 @@ services:
     environment:
       - MONGO_INITDB_ROOT_USERNAME=$MONGO_USERNAME
       - MONGO_INITDB_ROOT_PASSWORD=$MONGO_PASSWORD
-    volumes:     
+    volumes: 
       - dbdata:/data/db
     networks:
-      - app-network  
+      - app-network 
 
 networks:
   app-network:
@@ -322,7 +322,7 @@ networks:
 
 volumes:
   dbdata:
-  node_modules:  
+  node_modules: 
 ```
 
 Com as definições do seu serviço instaladas, você está pronto para iniciar o aplicativo.
